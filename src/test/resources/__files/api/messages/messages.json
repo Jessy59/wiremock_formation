@@ -1,0 +1,12 @@
+[
+  {
+    "id": "bf12b0f5-04b9-447c-ada2-279429518d12",
+    "status": "READ",
+    "message": "First message"
+  },
+  {
+    "id": "25ed355b-7286-4883-b0ae-92b619264f71",
+    "status": "IN_WAIT",
+    "message": "Second message"
+  }
+]
