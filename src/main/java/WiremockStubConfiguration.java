@@ -7,7 +7,7 @@ public class WiremockStubConfiguration {
 
     public static void stubConfiguration() {
         // urlPathEqualTo
-//        stubFor(get(urlPathEqualTo("/api/messages/")).willReturn(aResponse().withStatus(200).withBodyFile("api/messages/messages.json")));
+        stubFor(get(urlPathEqualTo("/api/messages")).willReturn(aResponse().withStatus(200).withBodyFile("api/messages/messages.json")));
 
         // urlPathMatching
 //        stubFor(get(urlPathMatching("/api/.*")).willReturn(aResponse().withStatus(200).withBodyFile("api/messages/messages.json")));
