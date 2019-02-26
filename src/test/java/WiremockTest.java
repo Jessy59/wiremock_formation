@@ -20,12 +20,15 @@ public class WiremockTest {
 
     @Test
     public void testApi() throws IOException {
+        //GIVEN
         stubFor(get("/api/messages").willReturn(ok()));
 
+        //WHEN
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet request = new HttpGet("http://localhost:8080/api/messages");
         CloseableHttpResponse response = httpClient.execute(request);
 
+        //THEN
         verify(getRequestedFor(urlEqualTo("/api/messages")));
         verify(1, getRequestedFor(urlEqualTo("/api/messages")));
         verify(lessThanOrExactly(1), getRequestedFor(urlEqualTo("/api/messages")));
