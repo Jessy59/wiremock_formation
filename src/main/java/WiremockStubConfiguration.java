@@ -40,6 +40,9 @@ public class WiremockStubConfiguration {
 //        stubFor(get("/api/messages").willReturn(aResponse().withFixedDelay(5000).withBodyFile("api/messages/messages.json")));
 //        stubFor(get("/api/messages").willReturn(aResponse().withRandomDelay(new UniformDistribution(1000, 5000)).withBodyFile("api/messages/messages.json")));
 
+        // priority
+//        stubFor(get("/api/messages").willReturn(aResponse().withBody("specific stub")));
+//        stubFor(get(urlPathMatching("/api/.*")).willReturn(aResponse().withBody("generic stub")));
 
     }
 }
